@@ -1,0 +1,80 @@
+body {
+  background-color: #2f2f33;
+}
+
+#app {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 11.1rem auto 0;
+
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin: 2.5rem 0;
+
+    .sr-only {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      margin: -1px;
+      overflow: hidden;
+      clip: rect(0, 0, 0, 0);
+      white-space: nowrap;
+      border-width: 0;
+    }
+
+    .search {
+      display: flex;
+      gap: 0.8rem;
+      input {
+        max-width: 100%;
+        width: 46.2rem;
+        padding: 1.6rem;
+
+        border: none;
+        border-radius: 0.8rem;
+
+        background-color: #06181c;
+        color: white;
+      }
+
+      &-button {
+        display: flex;
+        align-items: center;
+
+        gap: 0.8rem;
+        padding: 1.6rem 3.2rem;
+
+        background-color: #065e7c;
+
+        border: none;
+        border-radius: 0.5rem;
+        cursor: pointer;
+
+        font-weight: bold;
+        color: white;
+
+        transition: 0.2s ease-in;
+
+        &:hover {
+          background-color: white;
+          color: #065e7c;
+
+          transition: 0.2s ease-in;
+        }
+
+        svg path {
+          transition: 0.2s ease-in;
+        }
+
+        &:hover > svg path {
+          fill: #065e7c;
+          transition: 0.2s ease-in;
+        }
+      }
+    }
+  }
+}
